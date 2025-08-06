@@ -9,6 +9,17 @@ export default function Reservasi() {
     message: ''
   });
 
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const namaURL = searchParams.get("untuk");
+    if (namaURL) {
+      setFormData(prev => ({
+        ...prev,
+        name: decodeURIComponent(namaURL)
+      }));
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -37,7 +48,7 @@ export default function Reservasi() {
         
         <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md">
           <div className="mb-4">
-            <label className="block text-sage-600 mb-2" htmlFor="name">Nama Lengkap</label>
+            <label className="block text-sage-600 mb-2" htmlFor="name">Nama</label>
             <input
               type="text"
               id="name"

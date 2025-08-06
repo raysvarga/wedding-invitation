@@ -4,16 +4,16 @@ export default function Events() {
   const events = [
     {
       title: "Akad Nikah",
-      date: "Selasa, 21 Mei 2024",
+      date: "Sabtu, 12 Februari 2028",
       time: "08.00 – 10.00 WIB",
-      location: "Grand Hyatt, Jakarta",
+      location: "The Wujil Resort & Conventions, Semarang",
       description: "Momen sakral penyatuan janji suci pernikahan kami."
     },
     {
       title: "Resepsi Pernikahan",
-      date: "Selasa, 21 Mei 2024",
+      date: "Sabtu, 12 Februari 2028",
       time: "11.00 – 15.00 WIB",
-      location: "Grand Hyatt Ballroom, Jakarta",
+      location: "The Wujil Resort & Conventions, Semarang",
       description: "Syukuran dan jamuan makan bersama keluarga dan sahabat tercinta."
     }
   ];

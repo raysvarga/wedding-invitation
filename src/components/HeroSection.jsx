@@ -23,7 +23,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center px-6 max-w-2xl animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-serif text-white font-bold mb-4 leading-tight">
-          Amanda &amp; Ryan
+          Hilya &amp; Rama
         </h1>
 
         <p className="text-xl md:text-2xl text-white mb-2">
@@ -35,7 +35,7 @@ export default function HeroSection() {
         </p>
 
         <p className="text-base md:text-lg text-white">
-          21 Mei 2024 • Grand Hyatt, Jakarta
+          12 Februari 2028 • The Wujil Resort & Conventions, Semarang
         </p>
       </div>
     </section>
