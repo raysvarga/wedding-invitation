@@ -87,5 +87,5 @@ weeding-invitation/
 
 ## 📌 Credits
 
-Dibuat dengan ❤️ oleh [Namamu] untuk hari bahagia.  
+Dibuat dengan ❤️ oleh Rays untuk hari bahagia.  
 Inspirasi desain dari berbagai template undangan digital.
