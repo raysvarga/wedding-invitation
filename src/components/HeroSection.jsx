@@ -1,4 +1,16 @@
+import { useEffect, useState } from "react";
+
 export default function HeroSection() {
+  const [namaTamu, setNamaTamu] = useState("Tamu");
+
+  useEffect(() => {
+    const searchParams = new URLSearchParams(window.location.search);
+    const nama = searchParams.get("untuk");
+    if (nama) {
+      setNamaTamu(decodeURIComponent(nama));
+    }
+  }, []);
+
   return (
     <section className="relative h-screen flex items-center justify-center bg-sage-100 overflow-hidden">
       <img 
@@ -13,9 +25,15 @@ export default function HeroSection() {
         <h1 className="text-4xl md:text-6xl font-serif text-white font-bold mb-4 leading-tight">
           Amanda &amp; Ryan
         </h1>
-        <p className="text-xl md:text-2xl text-white mb-6">
+
+        <p className="text-xl md:text-2xl text-white mb-2">
           Kami akan menikah!
         </p>
+
+        <p className="text-lg md:text-xl text-white mb-6">
+          Kami Mengundang, <span className="font-bold">{namaTamu}</span>
+        </p>
+
         <p className="text-base md:text-lg text-white">
           21 Mei 2024 • Grand Hyatt, Jakarta
         </p>
