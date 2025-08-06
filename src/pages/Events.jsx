@@ -1,4 +1,6 @@
 import EventCard from '../components/EventCard';
+import akadImg from '../assets/img/akad.jpg';
+import resepsiImg from '../assets/img/resepsi.jpeg';
 
 export default function Events() {
   const events = [
@@ -7,14 +9,16 @@ export default function Events() {
       date: "Rabu, 02 Februari 2022",
       time: "08.00 – 10.00 WIB",
       location: "The Wujil Resort & Conventions, Semarang",
-      description: "Momen sakral penyatuan janji suci pernikahan kami."
+      description: "Momen sakral penyatuan janji suci pernikahan kami.",
+      image: akadImg,
     },
     {
       title: "Resepsi Pernikahan",
       date: "Rabu, 02 Februari 2022",
       time: "11.00 – 15.00 WIB",
       location: "The Wujil Resort & Conventions, Semarang",
-      description: "Syukuran dan jamuan makan bersama keluarga dan sahabat tercinta."
+      description: "Syukuran dan jamuan makan bersama keluarga dan sahabat tercinta.",
+      image: resepsiImg,
     }
   ];
 
@@ -34,6 +38,7 @@ export default function Events() {
               time={event.time}
               location={event.location}
               description={event.description}
+              image={event.image}
             />
           ))}
         </div>

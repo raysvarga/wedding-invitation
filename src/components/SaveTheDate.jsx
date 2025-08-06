@@ -8,7 +8,7 @@ export default function SaveTheDate() {
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="text-3xl text-sage-600 font-serif mb-4">Tandai Tanggal-nya</h2>
         <p className="text-lg text-sage-500 mb-6">
-          Kami akan menikah pada <strong>02 Februari 2022</strong> The Wujil Resort & Conventions, Semarang.
+          Kami akan menikah pada <strong>02 Agustus 2028</strong> The Wujil Resort & Conventions, Semarang.
         </p>
         <a
           href={googleCalendarUrl}

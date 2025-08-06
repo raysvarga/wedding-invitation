@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import HeroImg from "../assets/img/hero.jpg"
 
 export default function HeroSection() {
   const [namaTamu, setNamaTamu] = useState("Anda");
@@ -16,7 +17,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center bg-sage-100 overflow-hidden">
       <img 
-        src="https://placehold.co/1920x1080" 
+        src={HeroImg}
         alt="Dekorasi pernikahan romantis dengan bunga dan cahaya senja"
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
@@ -25,7 +26,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center px-6 max-w-2xl animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-serif text-white font-bold mb-4 leading-tight">
-          ? &amp; ?
+          Sore &amp; Jonathan
         </h1>
 
         <p className="text-xl md:text-2xl text-white mb-2">

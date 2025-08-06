@@ -1,4 +1,4 @@
-export default function EventCard({ title, date, time, location, description }) {
+export default function EventCard({ title, date, time, location, description, image }) {
   // Format untuk URL Calendar
   const formatDate = (rawDate, rawTime) => {
     const start = new Date(`${rawDate}T${rawTime}`);
@@ -33,8 +33,8 @@ export default function EventCard({ title, date, time, location, description }) 
       <div className="md:flex">
         <div className="md:w-1/3">
           <img 
-            src="https://placehold.co/600x400" 
-            alt="Dekorasi acara pernikahan"
+            src={image || 'https://placehold.co/600x400'} 
+            alt={`Gambar untuk ${title}`}
             className="w-full h-full object-cover"
           />
         </div>
