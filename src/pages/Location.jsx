@@ -26,7 +26,7 @@ export default function Location() {
             href="https://maps.app.goo.gl/ZVCf38sHTKf4puzL7"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 py-3 bg-[#a3b18a] hover:bg-[#8c9c78] text-white font-medium rounded-full transition"
+            className="inline-block bg-sage-500 text-white px-6 py-2 rounded-full hover:bg-sage-600 transition"
           >
             Buka di Google Maps
           </a>

@@ -1,6 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Reservasi() {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -10,7 +12,7 @@ export default function Reservasi() {
   });
 
   useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
+    const searchParams = new URLSearchParams(location.search);
     const namaURL = searchParams.get("untuk");
     if (namaURL) {
       setFormData(prev => ({
@@ -18,7 +20,7 @@ export default function Reservasi() {
         name: decodeURIComponent(namaURL)
       }));
     }
-  }, []);
+  }, [location.search]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

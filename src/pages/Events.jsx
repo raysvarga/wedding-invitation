@@ -4,14 +4,14 @@ export default function Events() {
   const events = [
     {
       title: "Akad Nikah",
-      date: "Sabtu, 12 Februari 2028",
+      date: "Rabu, 02 Februari 2022",
       time: "08.00 – 10.00 WIB",
       location: "The Wujil Resort & Conventions, Semarang",
       description: "Momen sakral penyatuan janji suci pernikahan kami."
     },
     {
       title: "Resepsi Pernikahan",
-      date: "Sabtu, 12 Februari 2028",
+      date: "Rabu, 02 Februari 2022",
       time: "11.00 – 15.00 WIB",
       location: "The Wujil Resort & Conventions, Semarang",
       description: "Syukuran dan jamuan makan bersama keluarga dan sahabat tercinta."

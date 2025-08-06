@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function HeroSection() {
-  const [namaTamu, setNamaTamu] = useState("Tamu");
+  const [namaTamu, setNamaTamu] = useState("Anda");
+  const location = useLocation();
 
   useEffect(() => {
-    const searchParams = new URLSearchParams(window.location.search);
+    const searchParams = new URLSearchParams(location.search);
     const nama = searchParams.get("untuk");
     if (nama) {
       setNamaTamu(decodeURIComponent(nama));
     }
-  }, []);
+  }, [location.search]);
 
   return (
     <section className="relative h-screen flex items-center justify-center bg-sage-100 overflow-hidden">
@@ -23,7 +25,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 text-center px-6 max-w-2xl animate-fade-in">
         <h1 className="text-4xl md:text-6xl font-serif text-white font-bold mb-4 leading-tight">
-          Hilya &amp; Rama
+          ? &amp; ?
         </h1>
 
         <p className="text-xl md:text-2xl text-white mb-2">
@@ -35,7 +37,7 @@ export default function HeroSection() {
         </p>
 
         <p className="text-base md:text-lg text-white">
-          12 Februari 2028 • The Wujil Resort & Conventions, Semarang
+          02 Februari 2022 • The Wujil Resort & Conventions, Semarang
         </p>
       </div>
     </section>

@@ -8,6 +8,10 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const searchParams = new URLSearchParams(location.search);
+  const untuk = searchParams.get("untuk");
+  const queryString = untuk ? `?untuk=${encodeURIComponent(untuk)}` : "";
+
   const navItems = [
     { to: "/", label: "Beranda" },
     { to: "/events", label: "Acara" },
@@ -20,7 +24,7 @@ export default function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="flex items-center">
+          <Link to={`/${queryString}`} className="flex items-center">
             <span className="font-bold text-xl text-sage-500 tracking-wide">
               Undangan Pernikahan
             </span>
@@ -30,7 +34,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
-                to={item.to}
+                to={`${item.to}${queryString}`}
                 label={item.label}
                 active={location.pathname === item.to}
               />
@@ -75,7 +79,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <NavLink
                   key={item.to}
-                  to={item.to}
+                  to={`${item.to}${queryString}`}
                   label={item.label}
                   active={location.pathname === item.to}
                   onClick={closeMenu}
