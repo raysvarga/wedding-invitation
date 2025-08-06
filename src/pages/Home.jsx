@@ -1,6 +1,7 @@
 import HeroSection from '../components/HeroSection';
 import CoupleIntro from '../components/CoupleIntro';
 import SaveTheDate from '../components/SaveTheDate';
+import Countdown from '../components/Countdown';
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HeroSection />
       <CoupleIntro />
       <SaveTheDate />
+      <Countdown />
     </div>
   );
 }
